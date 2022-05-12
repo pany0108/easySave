@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/****************************************************************************** 
+  Common Mobile
+******************************************************************************/
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1;
+  color: #222;
+}
+#Container {
+  max-height: calc(100vh - 109px);
+  overflow-y: auto;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li,
+ol {
+  list-style: none;
+}
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+/****************************************************************************** 
+  @font-weight
+******************************************************************************/
+.font-light {
+  font-weight: 300 !important;
+}
+.font-normal {
+  font-weight: 400 !important;
+}
+.font-med {
+  font-weight: 500 !important;
+}
+.font-bold {
+  font-weight: 700 !important;
+}
+
+/****************************************************************************** 
+  @font-color
+******************************************************************************/
+.point-color {
+  color: #ff6e39 !important;
+}
+
+/****************************************************************************** 
+  @text-align
+******************************************************************************/
+.text-center {
+  text-align: center;
+}
+
+/****************************************************************************** 
+  @Align
+******************************************************************************/
+.align-right {
+  margin-left: auto;
+  text-align: right;
+}
+.align-top {
+  display: flex;
+  align-items: flex-start;
+}
+/****************************************************************************** 
+  @Message
+******************************************************************************/
+.message {
+  color: #818181;
+}
+.message.small {
+  margin-top: calc(20rem / 16);
+  font-size: calc(12rem / 16);
+  letter-spacing: -0.42px;
+}
+
+/****************************************************************************** 
+  @Title
+******************************************************************************/
+.title.dot-title {
+  padding-left: calc(36rem / 16);
+  margin-bottom: calc(17rem / 16);
+  position: relative;
+  font-size: calc(16rem / 16);
+  font-weight: 700;
+  letter-spacing: -0.56px;
+}
+.title.dot-title::before,
+.title.dot-title::after {
+  content: '';
+  display: block;
+  width: calc(6rem / 16);
+  height: calc(6rem / 16);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #ff6e39;
+}
+.title.dot-title::before {
+  left: 0;
+}
+.title.dot-title::after {
+  left: calc(10rem / 16);
+  opacity: 0.5;
+}

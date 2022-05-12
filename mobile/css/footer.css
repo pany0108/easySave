@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/****************************************************************************** 
+  Footer
+******************************************************************************/
+.footer-container {
+  display: none;
+  border-top: calc(1rem / 16) solid #dbdbdb;
+  padding: calc(16rem / 16) 0 calc(14rem / 16);
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  width: calc(347 / 375 * 100%);
+  margin: 0 auto;
+  background: #fff;
+  transition: 0.3s ease-in-out;
+}
+/****************************************************************************** 
+  @footer 주소
+******************************************************************************/
+footer .f_info_box {
+  font-size: calc(10rem / 16);
+}
+footer .f_info_box dl {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: calc(7rem / 16) 0;
+  color: #818181;
+  letter-spacing: -0.42px;
+}
+footer .f_info_box dt:not(:first-of-type) {
+  margin-left: calc(10rem / 16);
+}
+footer .f_info_box dt::after {
+  content: ' :';
+}
+footer .f_info_box dd {
+  margin: 0 0 0 calc(4rem / 16);
+}
+footer .f_info_box .copyright {
+  color: rgba(129, 129, 129, 0.46);
+}
+
+/****************************************************************************** 
+  @footer 우측 메뉴
+******************************************************************************/
+footer .f_menu {
+  margin-top: calc(16rem / 16);
+}
+footer .s_menu a {
+  font-size: calc(10rem / 16);
+  letter-spacing: -0.35px;
+  color: #818181;
+}
+footer .f_menu ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+footer .f_menu ul > li + li:not(:first-child) {
+  margin-left: calc(20rem / 16);
+}

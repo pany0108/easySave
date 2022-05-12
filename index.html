@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <title>이지세이브</title>
+  </head>
+  <body>
+    <div id="Wrap">
+      <!-- header -->
+      <header>
+        <h1><a href="./index.html">이지세이브</a></h1>
+
+        <nav id="gnb">
+          <ul>
+            <li>
+              <a href="./index.html#secondPage">보험료 비교서비스</a>
+              <ul class="depth2 menu1">
+                <li><a href="./index.html#secondPage">보험료 비교(실시간)</a></li>
+                <li><a href="./index.html#secondPage">상담 신청</a></li>
+                <li><a href="./index.html#3rdPage">비교 방법</a></li>
+              </ul>
+            </li>
+            <li>
+              <label for="tab1" onclick="location.href='./index.html#4thpage'">이지세이브</label>
+              <ul class="depth2 menu2">
+                <li>
+                  <label for="tab1" onclick="location.href='./index.html#4thpage'">회사 소개</label>
+                </li>
+                <li>
+                  <label for="tab2" onclick="location.href='./index.html#4thpage'">회사 연혁</label>
+                </li>
+                <li>
+                  <label for="tab3" onclick="location.href='./index.html#4thpage'">함께하는 회사</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="communication.html">커뮤니케이션</a>
+              <ul class="depth2 menu3">
+                <li><a href="communication.html">SNS채널</a></li>
+                <li><a href="communication.html">제휴 문의</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="employment.html">인재영입</a>
+              <ul class="depth2 menu4">
+                <li><a href="employment.html">상담원 채용</a></li>
+                <li><a href="employment.html">복지 혜택</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="gnb_bg"></div>
+      </header>
+      <!-- header end -->
+
+      <div class="scroll_wrapper">
+        <div class="scroll">
+          <div class="box">
+            <div class="txtbox">
+              <span class="icon"></span>
+              <span class="txt">Scroll Down</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="container">
+        <div id="fullpage">
+          <div id="section0" class="section main1">
+            <div id="mainVisual">
+              <div class="main_bg"></div>
+              <div class="txtbox">
+                <div class="txt txt1">자동차 보험, 한번에 나와라!</div>
+                <div class="txt txt2">이지세이브.</div>
+                <div class="txt txt3">언제 어디서나 혼자서 한번에 쉽게 비교하고 가입까지 바로</div>
+              </div>
+            </div>
+
+            <div id="mainFooter">
+              <div class="f_sns_box">
+                <ul>
+                  <li>
+                    <a href="#"><img src="./img/icons/icon_sns_1.svg" alt="instagram" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./img/icons/icon_sns_2.svg" alt="facebook" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./img/icons/icon_sns_3.svg" alt="youtube" /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="f_txt">대한민국 하이스트 브랜드 자동차보험 비교 부문 1위</div>
+            </div>
+          </div>
+          <div id="section1" class="section main2" data-anchor="slide1">
+            <div class="form_container">
+              <div class="titlebox">
+                <div class="title">인터넷자동차보험 실시간 비교하기</div>
+                <div class="subtitle">1분이면 보험료 비교! (모바일로만 비교 가능합니다.)</div>
+              </div>
+
+              <form>
+                <div class="formbox">
+                  <div class="form-control input fluid">
+                    <input type="tel" placeholder="휴대폰번호 입력 (숫자만)" />
+                  </div>
+                  <button type="button">비교링크 주소 메시지로 받기 <i class="arrow right"></i></button>
+                </div>
+              </form>
+
+              <div class="counter_wrapper">
+                <div class="counter-txt-container">
+                  <div class="counter-txt1 font-med">최근 3개월 비교 고객</div>
+                  <div class="counter-txt2 point-color font-bold">47,150<span class="font-med">명</span></div>
+                </div>
+              </div>
+
+              <div class="cta_wrapper">
+                <div class="cta-button cta-button1">
+                  <a href="#modal1">
+                    <i class="tel-consult circle"><img src="./img/icons/icon-consulting.svg" /></i>
+                    <span> 상담원과 비교 신청하기 <i class="arrow right"></i> </span
+                  ></a>
+                </div>
+                <div class="cta-button cta-button2">
+                  <a href="https://play.google.com/store/apps/details?id=com.easysave.renew">
+                    <i class="google-store">
+                      <img src="./img/icons/icon-google.svg" />
+                    </i>
+                    <span>
+                      APP으로 비교하기 <i class="arrow right"></i><br />
+                      <span class="subtxt">어플리케이션 다운로드</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="section2" class="section main3">
+            <div class="carousel_container">
+              <div class="titlebox">
+                <div class="title">1분이면 <span class="font-light">인터넷자동차보험료를</span> 비교 <span class="font-light">할 수 있습니다!</span></div>
+              </div>
+
+              <div class="carousel_wrapper owl-theme">
+                <div class="item">
+                  <div class="slide-title">개인정보 동의</div>
+                  <div class="slide-subtitle">휴대폰 인증</div>
+                  <span class="step_lv">1</span>
+                  <img src="./img/steps/view_1.png" />
+                </div>
+                <div class="item">
+                  <div class="slide-title">만기정보 확인</div>
+                  <span class="step_lv">2</span>
+                  <img src="./img/steps/view_2.png" />
+                </div>
+                <div class="item">
+                  <div class="slide-title">가입차량 확인</div>
+                  <div class="slide-subtitle">자동으로 선택</div>
+                  <span class="step_lv">3</span>
+                  <img src="./img/steps/view_3.png" />
+                </div>
+                <div class="item">
+                  <div class="slide-title">운전범위 선택</div>
+                  <span class="step_lv">4</span>
+                  <img src="./img/steps/view_4.png" />
+                </div>
+                <div class="item">
+                  <div class="slide-title">담보 선택</div>
+                  <span class="step_lv">5</span>
+                  <img src="./img/steps/view_5.png" />
+                </div>
+                <div class="item">
+                  <div class="slide-title">할인특약 선택</div>
+                  <span class="step_lv">6</span>
+                  <img src="./img/steps/view_6.png" />
+                </div>
+                <div class="item">
+                  <div class="slide-title">보험료 확인</div>
+                  <div class="slide-subtitle">선택보험사 가입 가능</div>
+                  <span class="step_lv">7</span>
+                  <img src="./img/steps/view_7.png" />
+                </div>
+              </div>
+
+              <div class="message">※ 차량구입 (신차,중고차)시 인터넷자동차보험료도 비교 가능합니다.</div>
+            </div>
+          </div>
+
+          <div id="section3" class="section main4">
+            <div class="tab_container">
+              <input id="tab3" type="radio" name="tab_item" data-target="tabContent3" />
+              <label class="tab_item" for="tab3">함께하는회사</label>
+              <input id="tab2" type="radio" name="tab_item" data-target="tabContent2" />
+              <label class="tab_item" for="tab2">회사연혁</label>
+              <input id="tab1" type="radio" name="tab_item" data-target="tabContent1" checked />
+              <label class="tab_item" for="tab1">회사소개</label>
+
+              <!-- 회사소개 -->
+              <div class="tab_content" id="tabContent1">
+                <div class="titlebox">
+                  <div class="title">이지세이브 입니다</div>
+                  <div class="subtitle subtitles">자동차보험 비교의 독보적 기술을 보유한 핀테크 기업</div>
+                  <div class="subtitle subtitles">시간과 비용을 절약 시켜드리는 회사입니다.</div>
+                </div>
+
+                <div class="company-list">
+                  <div class="company-list-item">
+                    <img src="./img/company_1.png" />
+
+                    <div class="content">
+                      <div class="title"><span class="point-color">신뢰</span>받는 회사입니다</div>
+                      <div class="subtitle">브랜드스탁 Highest Brand _ 자동차보험 비교 부분 1위 (2년 연속) 고객님들께 사랑받는 회사입니다.</div>
+                    </div>
+                  </div>
+
+                  <div class="company-list-item">
+                    <img src="./img/company_2.png" />
+
+                    <div class="content">
+                      <div class="title"><span class="point-color">인정</span>받는 회사입니다</div>
+                      <div class="subtitle">하나벤처스로부터 핀테크 스타트업 투자를 받았으며 하나벤처스의 금융파트너 회사입니다.</div>
+                    </div>
+                  </div>
+
+                  <div class="company-list-item">
+                    <img src="./img/company_3.svg" />
+
+                    <div class="content">
+                      <div class="title"><span class="point-color">사랑</span>받는 회사입니다</div>
+                      <div class="subtitle">현대캐피탈, 현대카드, KB차차차, 카카오모빌리티 고객이 사용중인 회사입니다.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 회사연혁 -->
+              <div class="tab_content" id="tabContent2">
+                <div class="titlebox">
+                  <div class="title">회사연혁</div>
+                </div>
+
+                <div class="company-history-list">
+                  <div class="company-history-list-item">
+                    <div class="year">2017</div>
+                    <div class="month-list">
+                      <div class="month-list-item">
+                        <div class="month">1월</div>
+                        <div class="detail">이지세이브 설립</div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">6월</div>
+                        <div class="detail">한화손보 제휴</div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">8월</div>
+                        <div class="detail">The-K손해보험 제휴</div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">9월</div>
+                        <div class="detail">현대해상 제휴</div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">9월</div>
+                        <div class="detail">KB손해보험 제휴</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="company-history-list-item">
+                    <div class="year">2018</div>
+                    <div class="month-list">
+                      <div class="month-list-item">
+                        <div class="month">1월</div>
+                        <div class="detail">DB손해보험 제휴</div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">6월</div>
+                        <div class="detail">우리금융캐피탈 제휴</div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">12월</div>
+                        <div class="detail">자동차보험 비교 플랫폼 개발</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="company-history-list-item">
+                    <div class="year">2019</div>
+                    <div class="month-list">
+                      <div class="month-list-item">
+                        <div class="month">1월</div>
+                        <div class="detail">현대캐피탈 제휴</div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">10월</div>
+                        <div class="detail">자동차보험 비교 부분 1위<small>대한민국 하이스트 브랜드</small></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="company-history-list-item">
+                    <div class="year">2020</div>
+                    <div class="month-list">
+                      <div class="month-list-item">
+                        <div class="month">8월</div>
+                        <div class="detail">캐롯손해보험 제휴</div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">10월</div>
+                        <div class="detail">자동차보험 비교 부분 1위(2년 연속)<small>대한민국 하이스트 브랜드</small></div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">12월</div>
+                        <div class="detail">글로벌금융판매 제휴</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="company-history-list-item">
+                    <div class="year">2021</div>
+                    <div class="month-list">
+                      <div class="month-list-item">
+                        <div class="month">4월</div>
+                        <div class="detail">현대카드 제휴</div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">5월</div>
+                        <div class="detail">흥국화재 제휴</div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">6월</div>
+                        <div class="detail">카카오모빌리티 제휴</div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">7월</div>
+                        <div class="detail">상담직원 16기 채용</div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">8월</div>
+                        <div class="detail">우리카드 제휴</div>
+                      </div>
+                      <div class="month-list-item">
+                        <div class="month">8월</div>
+                        <div class="detail">신한카드 제휴</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 함께하는회사 -->
+              <div class="tab_content" id="tabContent3">
+                <div class="titlebox">
+                  <div class="title">이지세이브와 함께하는 회사</div>
+                </div>
+
+                <div class="partner-list">
+                  <div class="partner-list-item">
+                    <div class="title">함께하는 보험사</div>
+                    <div class="logo-list">
+                      <img src="./img/logos/logo_1.png" />
+                      <img src="./img/logos/logo_2.png" />
+                      <img src="./img/logos/logo_3.png" />
+                      <img src="./img/logos/logo_4.png" />
+                      <img src="./img/logos/logo_5.png" />
+                      <img src="./img/logos/logo_6.png" />
+                      <img src="./img/logos/logo_7.png" />
+                    </div>
+                  </div>
+
+                  <div class="partner-list-item">
+                    <div class="title">서비스 이용 회사</div>
+                    <div class="logo-list">
+                      <img src="./img/logos/logo_8.png" />
+                      <img src="./img/logos/logo_9.png" />
+                      <img src="./img/logos/logo_10.svg" />
+                      <img src="./img/logos/logo_11.svg" />
+                      <img src="./img/logos/logo_12.png" />
+                      <img src="./img/logos/logo_13.png" />
+                      <img src="./img/logos/logo_14.png" />
+                    </div>
+                  </div>
+
+                  <div class="partner-list-item">
+                    <div class="title">기술 개발 회사</div>
+                    <div class="logo-list">
+                      <img src="img/logos/logo_15.png" />
+                      <img src="img/logos/logo_16.png" />
+                      <img src="img/logos/logo_17.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- footer -->
+          <div id="section4" class="section fp-auto-height footer-container">
+            <footer>
+              <div class="f_logo">이지세이브</div>
+              <div class="f_info_box">
+                <div class="address">서울특별시 영등포구 양평로 21다길 22, 2층</div>
+                <dl>
+                  <dt>대표이사</dt>
+                  <dd>윤기현</dd>
+                  <dt>사업자등록번호</dt>
+                  <dd>245-86-00698</dd>
+                  <dt>이메일</dt>
+                  <dd>privacy@easysaver.co.kr</dd>
+                </dl>
+                <div class="copyright">easy-save © 2017. All rights reserved.</div>
+              </div>
+              <div class="f_menu">
+                <div class="s_menu">
+                  <a href="#modal3">개인정보처리방침</a>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#"><img src="./img/icons/icon_sns_dark_1.svg" alt="instagram" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./img/icons/icon_sns_dark_2.svg" alt="facebook" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./img/icons/icon_sns_dark_3.svg" alt="youtube" /></a>
+                  </li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+          <!-- footer end -->
+        </div>
+      </div>
+    </div>
+
+    <!-- modal1 -->
+    <div id="modal1" class="modal">
+      <div class="modal-header">
+        <h1>상담 문의</h1>
+      </div>
+      <div class="modal-contents">
+        <form>
+          <div class="formbox">
+            <div class="form-row inline">
+              <label for="name">이름</label>
+              <input type="text" id="name" placeholder="이름을 입력해주세요." />
+            </div>
+            <div class="form-row inline">
+              <label for="phoneNo">휴대폰</label>
+              <input type="tel" id="phoneNo" placeholder="휴대폰번호 입력 (숫자만)" />
+            </div>
+            <div class="form-row agreement_wrapper">
+              <div class="label">개인정보 수집 및 활용동의</div>
+
+              <div class="checkbox_wrapper align-right">
+                <input type="checkbox" id="agree" />
+                <label for="agree">동의</label>
+              </div>
+              <div class="txtbox">
+                상담 서비스 제공을 위해 [개인정보보호법] 및 [정보통신망 이용촉진 및 정보보호 등에 관한 법률]에 따라 입력하신 이름과 휴대폰 번호를 수집/이용하게 되며, 해당정보는
+                동의일로부터 7일간 보유 후 즉시 폐기욉니다.
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-actions">
+        <a href="#modal2" class="button">상담 신청하기</a>
+        <div class="message small">상담시간 : 평일 오전 9시 ~ 오후 6시</div>
+      </div>
+    </div>
+    <!-- modal1 end -->
+
+    <!-- modal2 -->
+    <div id="modal2" class="modal confirm">
+      <i class="tel-consult circle inverted"> <img src="./img/icons/icon-consulting_light.svg" /></i>
+      <div class="modal-header">
+        <h1>상담신청이 접수되었습니다.</h1>
+      </div>
+      <div class="modal-contents">빠른시간내에 연락드리겠습니다.</div>
+      <div class="modal-actions">
+        <a href="#" rel="modal:close" class="button">확인하기</a>
+      </div>
+    </div>
+    <!-- modal2 end -->
+
+    <!-- modal3 -->
+    <div id="modal3" class="modal info">
+      <div class="modal-header">
+        <h1>개인정보처리방침</h1>
+      </div>
+      <div class="modal-contents">
+        <div class="content">
+          (주)이지세이브 (이하 “회사”라 함)는 「개인정보 보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 관련 법령상의 개인정보보호 규정을 준수하며, 관련 법령에
+          의거한 개인정보처리방침을 아래와 같이 정하여 이용자 권익 보호에 최선을 다하고 있습니다.
+        </div>
+        <div class="header">1. 개인정보의 수집∙이용 목적</div>
+        <div class="content">1) 자동차보험료 비교 서비스 제공</div>
+        <div class="content">2) 자동차보험 만기알람 서비스 제공</div>
+        <div class="content">3) 기타 상품∙서비스의 소개 및 홍보</div>
+        <div class="content">4) 사은품 제공∙판촉행사 안내</div>
+        <div class="content">5) 시장조사</div>
+
+        <div class="header">2. 수집하는 개인정보 항목 및 수집방법</div>
+        <div class="content">1) 수집하는 개인정보 항목</div>
+        <div class="content">- 이름, 휴대폰번호, 차량정보, 추가부속품, 보험기간, 운전자범위, 담보내용 및 금액, 선택특약, 서비스 이용기록, 방문일시</div>
+        <div class="content">2) 개인정보 수집방법</div>
+        <div class="content">- 홈페이지, 서면 양식, 전화∙팩스, 경품행사, 협력사로부터의 제공, 생성 정보 수집 툴을 통한 수집</div>
+      </div>
+    </div>
+    <!-- modal3 end -->
+
+    <!-- 공통팝업 -->
+    <div id="modal4" class="modal common">
+      <div class="modal-header">
+        <div class="title">공통 팝업의</div>
+        <div class="title">내용이 들어갑니다.</div>
+      </div>
+      <div class="modal-contents">
+        <div class="content">서브문구들어갈 자리입니다.</div>
+      </div>
+    </div>
+    <!-- 공통팝업 end -->
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="./js/style.js"></script>
+    <script src="./js/scrolloverflow.min.js"></script>
+    <script src="./js/jquery.fullpage.min.js"></script>
+    <script src="./js/jquery.modal.min.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+        $('#fullpage').fullpage({
+          // sectionsColor: ['#1bbc9b', '#fff', '#fff', '#fff'],
+          anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage'],
+          verticalCentered: true,
+          navigation: true,
+          scrollingSpeed: 800,
+          scrollOverflow: true,
+          responsiveWidth: 1280,
+        });
+      });
+    </script>
+  </body>
+</html>

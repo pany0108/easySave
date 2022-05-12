@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/****************************************************************************** 
+  Footer
+******************************************************************************/
+.footer-container {
+  border-top: 1px solid #dbdbdb;
+  padding: 27px 0;
+}
+footer {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  transition: 0.3s ease-in-out;
+}
+footer > div.fp-tableCell {
+  display: flex !important;
+}
+#Wrap.sub .footer-container {
+  display: flex;
+  margin-top: 124px;
+  box-sizing: border-box;
+}
+
+/****************************************************************************** 
+  @footer logo
+******************************************************************************/
+footer .f_logo {
+  width: 62px;
+  height: 24px;
+  margin-top: 12px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url(../img/logo_dark.svg) no-repeat left top / contain;
+}
+
+/****************************************************************************** 
+  @footer 주소
+******************************************************************************/
+footer .f_info_box {
+  margin-left: 48px;
+  font-size: 12px;
+}
+footer .f_info_box .address {
+}
+footer .f_info_box dl {
+  display: flex;
+  margin: 10px 0;
+  color: #818181;
+  letter-spacing: -0.42px;
+}
+footer .f_info_box dt:not(:first-of-type) {
+  margin-left: 10px;
+}
+footer .f_info_box dt::after {
+  content: ' :';
+}
+footer .f_info_box dd {
+  margin: 0 0 0 4px;
+}
+footer .f_info_box .copyright {
+  color: rgba(129, 129, 129, 0.46);
+}
+
+/****************************************************************************** 
+  @footer 우측 메뉴
+******************************************************************************/
+footer .f_menu {
+  margin-left: auto;
+}
+footer .s_menu {
+  margin-bottom: 14px;
+  text-align: right;
+}
+footer .s_menu a {
+  font-size: 12px;
+  letter-spacing: -0.42px;
+  color: #818181;
+}
+footer .f_menu ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+footer .f_menu ul > li {
+}
+footer .f_menu ul > li + li:not(:first-child) {
+  margin-left: 20px;
+}

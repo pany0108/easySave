@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+/****************************************************************************** 
+  Sub Pages
+******************************************************************************/
+#Wrap.sub .section {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#Wrap.sub .titlebox {
+  margin-bottom: 70px;
+}
+
+/****************************************************************************** 
+  Sub Visual
+******************************************************************************/
+#Wrap.sub .sub-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 290px;
+  margin-bottom: 100px;
+}
+#Wrap.sub .sub-visual .title {
+  padding-top: 32px;
+  font-size: 46px;
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: -1.61px;
+}
+.subV1 {
+  background: url(../img/communication/sub_header.png) no-repeat center top/cover;
+}
+.subV2 {
+  background: url(../img/employment/sub_header.png) no-repeat center top/cover;
+}
+
+/****************************************************************************** 
+  Communication
+******************************************************************************/
+/* 픽토그램 */
+.pictogram-container {
+  width: 936px;
+  height: 310px;
+  margin: 0 auto 60px;
+  position: relative;
+  background: url(../img/communication/communication_img.svg) no-repeat center top / contain;
+}
+.pictogram-container .picto-box {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  height: 100%;
+  padding: 0 40px;
+}
+.pictogram-container .picto-box-left {
+  left: 0;
+}
+.pictogram-container .picto-box-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pictogram-container .picto-box-right {
+  right: 0;
+}
+.pictogram-container .picto-title {
+  font-size: 20px;
+  line-height: 1.45;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.7px;
+}
+.pictogram-container .picto-title:not(:first-child) {
+  margin-bottom: 10px;
+}
+.pictogram-container .picto-content {
+  font-size: 18px;
+  line-height: 1.44444444;
+  color: #fff;
+  text-align: left;
+  letter-spacing: -0.63px;
+}
+.pictogram-container .picto-box-center .picto-title {
+  font-size: 24px;
+  letter-spacing: -0.84px;
+  margin: 0;
+}
+.pictogram-container .picto-box-center img {
+  margin: 20px 0;
+}
+
+/* 문의절차 */
+.procedure-container {
+  padding-top: 60px;
+  border-top: 1px solid #dddddd;
+}
+.procedure-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.procedure-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  height: 100px;
+  background: #fff8f5;
+  border-radius: 55px;
+}
+.procedure-list-item .procedure-step {
+  margin-bottom: 11px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.procedure-list-item .procedure-txt {
+  font-size: 20px;
+}
+.procedure-list img {
+  display: inline-block;
+}
+.procedure-container + .note {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/****************************************************************************** 
+  Employment 
+******************************************************************************/
+.employment #tabContent1 {
+  position: relative;
+  z-index: -1;
+}
+.employment #tabContent1::after {
+  content: '';
+  width: 100vw;
+  height: 506px;
+  position: absolute;
+  left: calc((1200px - 100vw) / 2);
+  bottom: 0;
+  background: #f8f8f8;
+  z-index: -1;
+}
+
+#tab2:checked ~ .employment::after {
+  display: none;
+}
+/* 상담원 채용 */
+.data-list {
+  margin-bottom: 64px;
+}
+.data-list .row {
+  display: flex;
+  padding-bottom: 60px;
+}
+.data-list .row + .row {
+  padding-top: 60px;
+  border-top: 1px solid #dddddd;
+}
+.data-list-item {
+  width: 50%;
+  display: inline-flex;
+  align-items: flex-start;
+}
+.data-list-item .title {
+  min-width: 135px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+}
+.data-list-item .title > div {
+  display: flex;
+  align-items: center;
+}
+.data-list-item .subtitle {
+  padding-left: 34px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.49px;
+}
+.data-list-item .content-list-item {
+  font-size: 18px;
+  color: #818181;
+  letter-spacing: -1px;
+}
+.data-list-item .content-list-item + .content-list-item {
+  margin-top: 14px;
+}
+/* 채용과정 */
+.employment .procedure-container {
+  margin-bottom: 60px !important;
+  border-top: 0;
+}
+.employment .procedure-list-item {
+  background: #fff;
+}
+/* 접수방법 */
+.method-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top: 1px solid #dddddd;
+}
+.method-list {
+  display: flex;
+}
+.method-list-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 81px;
+  background: #fff;
+  font-size: 18px;
+  letter-spacing: -0.63px;
+}
+.method-list-item + .method-list-item {
+  border-left: 1px solid #dddddd;
+}

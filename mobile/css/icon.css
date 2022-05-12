@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/****************************************************************************** 
+  Icon Mobile
+******************************************************************************/
+i {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+i::before,
+i::after {
+  content: '';
+  position: absolute;
+}
+i > img {
+  vertical-align: middle;
+}
+
+i.arrow {
+  border: solid #fff;
+  border-width: 0 calc(2rem / 16) calc(2rem / 16) 0;
+  display: inline-block;
+  padding: calc(3rem / 16);
+}
+i.arrow.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+i.mail {
+  margin-right: calc(10rem / 16);
+}
+i.chat {
+  margin-right: calc(10rem / 16);
+}
+i.title-icon {
+  margin-right: calc(10rem / 16);
+}

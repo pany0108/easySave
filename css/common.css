@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/****************************************************************************** 
+  Common
+******************************************************************************/
+body {
+  width: 100%;
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1;
+  color: #222;
+}
+#Wrap {
+  width: 100%;
+  position: relative;
+}
+#container {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+li,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/****************************************************************************** 
+  @font-weight
+******************************************************************************/
+.font-light {
+  font-weight: 300 !important;
+}
+.font-normal {
+  font-weight: 400 !important;
+}
+.font-med {
+  font-weight: 500 !important;
+}
+.font-bold {
+  font-weight: 700 !important;
+}
+
+/****************************************************************************** 
+  @font-color
+******************************************************************************/
+.point-color {
+  color: #ff6e39 !important;
+}
+
+/****************************************************************************** 
+  @Align
+******************************************************************************/
+.align-right {
+  margin-left: auto;
+  text-align: right;
+}
+
+/****************************************************************************** 
+  @Message
+******************************************************************************/
+.message {
+  color: #818181;
+}
+.message.small {
+  margin-top: 22px;
+  font-size: 14px;
+  letter-spacing: -0.49px;
+}
+
+/****************************************************************************** 
+  @Title
+******************************************************************************/
+
+.title.dot-title {
+  padding-left: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.77px;
+}
+.title.dot-title::before,
+.title.dot-title::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #ff6e39;
+}
+.title.dot-title::before {
+  left: 0;
+}
+.title.dot-title::after {
+  left: 12px;
+  opacity: 0.5;
+}
+/****************************************************************************** 
+  @fullpage custom
+******************************************************************************/
+#fp-nav.right {
+  right: 32px;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  width: 12px;
+  height: 12px;
+  margin: 8px;
+}
+#fp-nav ul li:last-child {
+  display: none;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: rgba(255, 255, 255, 0.66);
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  height: 4px;
+  width: 4px;
+  margin: 0;
+  background: #ff6e39 !important;
+}
+#fp-nav ul li a.active span::after,
+#fp-nav ul li:hover a.active span::after,
+.fp-slidesNav ul li a.active span::after,
+.fp-slidesNav ul li:hover a.active span::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ff6e39;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+  width: 4px;
+  height: 4px;
+  margin: 0;
+}
+
+/* color variation */
+.fp-viewing-1 #fp-nav ul li a span,
+.fp-viewing-1 .fp-slidesNav ul li a span,
+.fp-viewing-2 #fp-nav ul li a span,
+.fp-viewing-2 .fp-slidesNav ul li a span,
+.fp-viewing-3 #fp-nav ul li a span,
+.fp-viewing-3 .fp-slidesNav ul li a span,
+.fp-viewing-4 #fp-nav ul li a span,
+.fp-viewing-4 .fp-slidesNav ul li a span,
+.fp-viewing-secondPage #fp-nav ul li a span,
+.fp-viewing-secondPage .fp-slidesNav ul li a span,
+.fp-viewing-3rdPage #fp-nav ul li a span,
+.fp-viewing-3rdPage .fp-slidesNav ul li a span,
+.fp-viewing-4thpage #fp-nav ul li a span,
+.fp-viewing-4thpage .fp-slidesNav ul li a span,
+.fp-viewing-5thpage #fp-nav ul li a span,
+.fp-viewing-5thpage .fp-slidesNav ul li a span {
+  background: rgba(221, 221, 221, 0.66);
+}
+.fp-viewing-1 .scroll .box .txtbox span.txt,
+.fp-viewing-2 .scroll .box .txtbox span.txt,
+.fp-viewing-3 .scroll .box .txtbox span.txt,
+.fp-viewing-4 .scroll .box .txtbox span.txt,
+.fp-viewing-secondPage .scroll .box .txtbox span.txt,
+.fp-viewing-3rdPage .scroll .box .txtbox span.txt,
+.fp-viewing-4thpage .scroll .box .txtbox span.txt,
+.fp-viewing-5thpage .scroll .box .txtbox span.txt {
+  color: #464646;
+}
+.fp-viewing-1 .scroll .box .txtbox span.icon,
+.fp-viewing-2 .scroll .box .txtbox span.icon,
+.fp-viewing-3 .scroll .box .txtbox span.icon,
+.fp-viewing-4 .scroll .box .txtbox span.icon,
+.fp-viewing-secondPage .scroll .box .txtbox span.icon,
+.fp-viewing-3rdPage .scroll .box .txtbox span.icon,
+.fp-viewing-4thpage .scroll .box .txtbox span.icon,
+.fp-viewing-5thpage .scroll .box .txtbox span.icon {
+  border-color: #222222;
+}
+.fp-viewing-1 .scroll .box .txtbox span.icon:before,
+.fp-viewing-2 .scroll .box .txtbox span.icon:before,
+.fp-viewing-3 .scroll .box .txtbox span.icon:before,
+.fp-viewing-4 .scroll .box .txtbox span.icon:before,
+.fp-viewing-secondPage .scroll .box .txtbox span.icon:before,
+.fp-viewing-3rdPage .scroll .box .txtbox span.icon:before,
+.fp-viewing-4thpage .scroll .box .txtbox span.icon:before,
+.fp-viewing-5thpage .scroll .box .txtbox span.icon:before {
+  background-color: #222222;
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/****************************************************************************** 
+  Icon
+******************************************************************************/
+i {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+i::before,
+i::after {
+  content: '';
+  position: absolute;
+}
+i > img {
+  vertical-align: middle;
+}
+
+i.arrow {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+i.arrow.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+i.tel-consult {
+  margin-right: 8px;
+}
+i.tel-consult.inverted {
+  margin-right: 0;
+}
+i.google-store {
+  margin-right: 10px;
+  margin-top: -5px;
+}
+i.mail {
+  margin-right: 10px;
+}
+i.chat {
+  margin-right: 10px;
+}
+i.title-icon {
+  margin-right: 10px;
+}

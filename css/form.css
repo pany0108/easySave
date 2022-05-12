@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/****************************************************************************** 
+  Form
+******************************************************************************/
+.form-control.fluid {
+  display: flex;
+}
+.form-control.fluid input {
+  max-width: 100%;
+  flex: 1 0 auto;
+}
+.form-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.form-row.inline input {
+  flex: 1;
+}
+.form-row + .form-row {
+  margin-top: 20px;
+}
+
+/****************************************************************************** 
+  @Label
+******************************************************************************/
+label,
+.label {
+  min-width: 76px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.7px;
+}
+
+/****************************************************************************** 
+  @Input
+******************************************************************************/
+input {
+  padding: 17px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 20px;
+  letter-spacing: -0.7px;
+}
+input::placeholder {
+  font-size: 20px;
+  opacity: 0.4;
+}
+input:focus {
+  outline: none;
+}
+
+/****************************************************************************** 
+  @Button
+******************************************************************************/
+button,
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 0 34px;
+  border-radius: 8px;
+  background: #ff6e39;
+  border: 2px solid #ff6e39;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.27px;
+  color: #fff;
+  box-shadow: 0px 8px 8px #00000014;
+  box-sizing: border-box;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+button:hover,
+.button:hover {
+  background: #fff;
+  color: #ff6e39;
+}
+button:hover i {
+  border-color: #ff6e39;
+}
+.input.fluid + button {
+  margin-top: 30px;
+}
+
+/****************************************************************************** 
+  @Checkbox
+******************************************************************************/
+.checkbox_wrapper {
+  position: relative;
+}
+.checkbox_wrapper input {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.checkbox_wrapper label {
+  display: inline-block;
+  height: 34px;
+  padding: 0 25px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #818181;
+  letter-spacing: -0.46px;
+  box-sizing: border-box;
+  cursor: pointer;
+  user-select: none;
+}
+.checkbox_wrapper input:checked ~ label {
+  border-color: #ff6e39;
+  color: #ff6e39;
+}

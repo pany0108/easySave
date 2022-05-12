@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+/****************************************************************************** 
+  Header
+******************************************************************************/
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 1280px;
+  padding: 24px 40px;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 99;
+  transition: all 0.3s ease-in-out;
+}
+header:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(219, 219, 219, 0.26);
+  width: 100%;
+  height: 1px;
+}
+header.fixed-header {
+  position: sticky;
+  top: 0;
+}
+/****************************************************************************** 
+  @logo
+******************************************************************************/
+header > h1 {
+  margin: 0;
+  font-size: 0;
+}
+header > h1 a {
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999em;
+  width: 98px;
+  height: 38px;
+  background: url(../img/logo.svg) no-repeat left top / contain;
+}
+
+/****************************************************************************** 
+  @GNB
+******************************************************************************/
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+#gnb {
+  text-align: right;
+}
+#gnb > ul {
+  margin: 0;
+}
+#gnb > ul > li {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+#gnb > ul > li + li {
+  margin-left: 110px;
+}
+#gnb > ul > li > a,
+#gnb > ul > li > label {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+#gnb > ul > li:hover > a,
+#gnb > ul > li:hover > label {
+  color: #ff6e39 !important;
+}
+
+/****************************************************************************** 
+  @sub Menu
+******************************************************************************/
+#gnb .depth2 {
+  display: none;
+  width: 120%;
+  margin: 0 -10%;
+  padding: 30px 0;
+  position: absolute;
+  top: calc(100% + 33px);
+  text-align: center;
+  background: none;
+}
+#gnb .depth2 li {
+  animation: gnbSub 0.5s 0.3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+#gnb .depth2 li + li {
+  margin-top: 30px;
+}
+#gnb .depth2 li a,
+#gnb .depth2 li label {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(34, 34, 34, 0.66);
+  cursor: pointer;
+}
+#gnb .depth2 li a:hover,
+#gnb .depth2 li label:hover {
+  color: #ff6e39;
+  font-weight: 500;
+}
+
+/****************************************************************************** 
+  @background
+******************************************************************************/
+.gnb_bg {
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+/****************************************************************************** 
+  @GNB Open
+******************************************************************************/
+#gnb.over,
+header.on h1,
+header.on::before {
+  z-index: 2;
+}
+header.on::before {
+  background: #dddddd;
+}
+header.on h1 a {
+  background-image: url(../img/logo_dark.svg);
+}
+#gnb.over > ul > li > a,
+#gnb.over > ul > li > label {
+  color: #222222;
+}
+#gnb.over .depth2 {
+  display: block;
+}
+.gnb_bg.on {
+  height: 270px;
+}
+
+/****************************************************************************** 
+  @color variation
+******************************************************************************/
+.fp-viewing-1 header,
+.fp-viewing-2 header,
+.fp-viewing-3 header,
+.fp-viewing-4 header,
+.fp-viewing-secondPage header,
+.fp-viewing-3rdPage header,
+.fp-viewing-4thpage header,
+.fp-viewing-5thpage header,
+.fixed-header {
+  background: #fff;
+}
+.fp-viewing-1 header > h1 a,
+.fp-viewing-2 header > h1 a,
+.fp-viewing-3 header > h1 a,
+.fp-viewing-4 header > h1 a,
+.fp-viewing-secondPage header > h1 a,
+.fp-viewing-3rdPage header > h1 a,
+.fp-viewing-4thpage header > h1 a,
+.fp-viewing-5thpage header > h1 a,
+.fixed-header > h1 a {
+  background-image: url(../img/logo_dark.svg);
+}
+.fp-viewing-1 #gnb > ul > li > a,
+.fp-viewing-2 #gnb > ul > li > a,
+.fp-viewing-3 #gnb > ul > li > a,
+.fp-viewing-4 #gnb > ul > li > a,
+.fp-viewing-secondPage #gnb > ul > li > a,
+.fp-viewing-3rdPage #gnb > ul > li > a,
+.fp-viewing-4thpage #gnb > ul > li > a,
+.fp-viewing-5thpage #gnb > ul > li > a,
+.fixed-header #gnb > ul > li > a,
+.fp-viewing-1 #gnb > ul > li > label,
+.fp-viewing-2 #gnb > ul > li > label,
+.fp-viewing-3 #gnb > ul > li > label,
+.fp-viewing-4 #gnb > ul > li > label,
+.fp-viewing-secondPage #gnb > ul > li > label,
+.fp-viewing-3rdPage #gnb > ul > li > label,
+.fp-viewing-4thpage #gnb > ul > li > label,
+.fp-viewing-5thpage #gnb > ul > li > label,
+.fixed-header #gnb > ul > li > label {
+  color: #222222;
+}
+
+/****************************************************************************** 
+  @keyframes
+******************************************************************************/
+@keyframes gnbSub {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/****************************************************************************** 
+  @Media Query
+******************************************************************************/
+/* @media screen and (max-width: 1280px) {
+  #gnb {
+    display: none;
+  }
+  header > h1 a {
+    width: 69px;
+    height: 27px;
+  }
+  .menu_btn_container {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  #menu_btnBox.on {
+    z-index: 5555;
+    opacity: 1;
+    visibility: visible;
+  }
+} */

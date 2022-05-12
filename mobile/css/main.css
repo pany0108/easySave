@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/****************************************************************************** 
+  Main Mobile
+******************************************************************************/
+.main-txt {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: calc(36rem / 16);
+  line-height: 1.38888888;
+  font-weight: 700;
+  letter-spacing: -0.54px;
+  color: #ffffff;
+}
+
+/****************************************************************************** 
+  Main Scroll
+******************************************************************************/
+.scroll_wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: calc(39rem / 16);
+  transform: translateX(-50%);
+  animation: scroll 1s linear 9999 normal forwards;
+}
+.scroll {
+  transform: rotate(270deg);
+  transform-origin: left top;
+  transition: all 0.3s ease-in-out;
+}
+.scroll .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(29rem / 16);
+  height: calc(19rem / 16);
+  border: calc(1rem / 16) solid #ffffff;
+  border-radius: 1.07142857em;
+}
+.scroll .icon:before {
+  content: '';
+  display: block;
+  width: calc(6rem / 16);
+  height: calc(1rem / 16);
+  position: absolute;
+  right: calc(6rem / 16);
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+}
+
+/****************************************************************************** 
+  Main Footer
+******************************************************************************/
+#mainFooter {
+  display: flex;
+  align-items: center;
+  padding: calc(4rem / 16) calc(14rem / 16);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: calc(1rem / 16) solid rgba(219, 219, 219, 0.26);
+}
+#mainFooter .f_sns_box ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+#mainFooter .f_sns_box li {
+  margin-right: calc(20rem / 16);
+  font-size: calc(16rem / 16);
+  opacity: 0.6;
+}
+
+#mainFooter .f_txt {
+  font-size: calc(12rem / 16);
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: -0.18px;
+}
+
+/****************************************************************************** 
+  @keyframes
+******************************************************************************/
+@keyframes scroll {
+  0% {
+    transform: translateY(3px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}

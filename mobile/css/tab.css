@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/****************************************************************************** 
+  Tab Mobile
+******************************************************************************/
+.tab_container {
+  position: relative;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: calc(40rem / 16);
+}
+.tab_item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(8rem / 16);
+  width: calc(100rem / 16) !important;
+  height: calc(30rem / 16);
+  border: calc(1rem / 16) solid #dddddd;
+  border-radius: calc(8rem / 16);
+  font-size: calc(14rem / 16);
+  font-weight: 400;
+  color: #818181;
+  letter-spacing: -0.49px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+.tab_item:first-of-type {
+  margin-left: 0;
+}
+
+/* 라디오 버튼 UI삭제*/
+input[name*='tab_item'] {
+  display: none;
+}
+
+/* 탭 컨텐츠 스타일 */
+.tab_content {
+  width: 100%;
+  display: none;
+}
+
+#tabContent1,
+#tabContent4,
+#tabContent6 {
+  display: block;
+}
+
+/* 선택된 탭 스타일 */
+.tabs input:checked + label.tab_item {
+  background: #ff6e39;
+  border-color: #ff6e39;
+  color: #fff;
+}
